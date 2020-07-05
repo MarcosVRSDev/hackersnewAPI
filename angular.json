@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "hackersnewAPI"
+    }
+  },
+  "defaultProject": "hackersnewAPI",
+  "cli": {
+    "analytics": "4ddbb80a-f8b5-4184-9a49-0457c6433f63"
+  }
 }
