@@ -20,12 +20,13 @@ export class NewsListPageComponent implements OnInit {
   ngOnInit(): void {
 
     this.data.getNewsList().subscribe((res) => {
-      for (let i = 0; i <10; i++) {
+      for (let i = 0; i <15; i++) {
         this.data.getItem(res[i]).subscribe((item) =>{
-      this.itens$.push(item);
-    });
-  }
-});
+          if(item.type == "story" && item.url !== ''){
+            this.itens$.push(item);
+          }    
+      });
+    }
+  });
 }
-
 }
